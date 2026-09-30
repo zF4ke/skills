@@ -42,6 +42,8 @@ For dropdowns, give the arrow a real inner inset, usually 12 pixels, and reserve
 
 For a short onboarding sequence, tie the phases together visibly. Cloak uses phase icons over a connecting track with an animated accent fill. Numbered circles and wide gaps alone looked disconnected to the owner. Another workflow may need a different progress treatment. Size a dialog around the active form, let it grow for real content, and keep a clear relationship between that form and its actions.
 
+Progress connectors should meet the step icons without a visible gap. Draw the track beneath their opaque backgrounds and verify the first, middle and final states. Cloak's current-step shadow erased four pixels of the connector, even though its fill reached the right coordinate. Opening starts at the actual first-step value without replaying a backwards animation.
+
 When a dialog exceeds the available height, scroll its body and keep the header and actions outside that scrolling area. A sticky footer over the whole dialog can cover the final field or error. Show a destructive action's consequence in the first visible part of its review, before long paths or other details, and check that it is visible at the smallest supported window size. Disable source selection while an inspection is pending so an old response cannot describe a new selection.
 
 Separate groups only where their meaning requires it. Start with proximity and spacing. A Save action stays beside the form it owns, before logs or unrelated tools. A rule above and below a lone button can sever that relationship. One quiet section background can group a substantial form; several nested cards and separators usually obscure it.
