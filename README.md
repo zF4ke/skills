@@ -1,50 +1,65 @@
-# Personal skills
+<h1 align="center">Personal skills</h1>
+<p align="center">My agent skills, design preferences and reference library.</p>
+<p align="center"><a href="#install">Install</a> / <a href="personal-ui/SKILL.md">Personal UI</a> / <a href="#references">References</a></p>
 
-Agent skills and their resources. This repository is private because its reference library includes personal screenshots and collected design examples.
+## Install
+
+Install with the [skills.sh CLI](https://github.com/vercel-labs/skills). You need Node.js and Git, plus access to this private repository. On a new PC, run `gh auth login` and `gh auth setup-git` first if you use GitHub CLI for Git authentication.
+
+```powershell
+npx skills add zF4ke/skills --skill personal-ui --global --agent codex opencode
+```
+
+Run this on each PC. `--global` makes the skill available across projects. Change the agent names to target the agents you use, or omit `--agent` to choose interactively. The installer includes the skill's references and assets. It uses a shared copy with links by default and falls back to copies when linking fails. Add `--copy` if you prefer independent copies.
 
 ## Personal UI
 
-`personal-ui` preserves general visual preferences, Ada and Cloak lessons, repertoire examples, motion and interaction rules, installer design and README guidance. Product-specific choices remain separate. A book reader need not look like Cloak.
+Design guidance for interfaces, onboarding, settings, installers and product READMEs. It carries the lessons from Ada and Cloak, plus selected examples and source PDFs from my design repertoire.
 
-The library travels with the skill. `personal-ui/references/examples/index.json` maps selected PDF frames to their sources. These are private references, not artwork to redistribute in applications. Owned app artwork stays in its product repo.
+[Cloak](https://github.com/zF4ke/cloak) is the current example. Its compact dark layout, purple accent, connected setup steps and themed controls reflect the feedback that shaped this skill. Other products should use a composition that fits their own purpose.
 
-| Resource | Purpose |
+<p align="center"><img src="personal-ui/references/examples/cloak/projects.png" width="760" alt="Cloak's project manager with new, import and clone actions, and two managed projects" /></p>
+
+### Use it
+
+Ask the agent to use `$personal-ui`, for example:
+
+> Use $personal-ui to redesign these settings. Keep the existing behavior and verify the result in the running app.
+
+The description also lets an agent select it for relevant design tasks. Start a new session if your agent caches its skill list.
+
+Keep `frontend-design` installed. Personal UI takes precedence when their aesthetic guidance conflicts; compatible implementation advice still applies. Skill instructions guide the agent, so this does not disable another skill or guarantee automatic selection in every agent.
+
+### Update
+
+```powershell
+npx skills update personal-ui --global
+```
+
+To inspect the repository's available skills without installing:
+
+```powershell
+npx skills add zF4ke/skills --list
+```
+
+## References
+
+The [skill entry point](personal-ui/SKILL.md) directs the agent to the relevant material for each task. The complete reference library travels with the installation.
+
+| Reference | What it covers |
 | --- | --- |
-| [Preferences](personal-ui/references/preferences.md) | General taste and dated product feedback. |
-| [Desktop patterns](personal-ui/references/desktop-patterns.md) | Controls, menus, setup, grouping and native window boundaries. |
-| [Motion](personal-ui/references/motion.md) | Springs, real state, first-render behavior and reduced motion. |
-| [Repertoire](personal-ui/references/repertoire.md) | Curated visual examples, source mapping and complete source PDFs. |
-| [READMEs](personal-ui/references/readmes.md) | Product presentation, user starting points and linked guides. |
-| [Validation](personal-ui/references/validation.md) | Independent task, outcomes and evidence limits. |
+| [Preferences](personal-ui/references/preferences.md) | General taste and product-specific feedback from Ada and Cloak. |
+| [Desktop patterns](personal-ui/references/desktop-patterns.md) | Layout, dropdowns, dialogs, grouping, installers and native window edges. |
+| [Motion](personal-ui/references/motion.md) | Springs, state transitions, first-render behavior and reduced motion. |
+| [Repertoire](personal-ui/references/repertoire.md) | Selected images, original PDFs and their source mapping. |
+| [READMEs](personal-ui/references/readmes.md) | Presentation, installation paths, screenshots and linked guides. |
 
-## Tested beyond Cloak
+This repository is private because it contains personal screenshots and collected design references. Those references are for study, not artwork to redistribute in an app. Cloak's example captures the real application using isolated test projects; it contains no personal project data.
 
-The forward test produced a warm book reader rather than another dark utility. The same dropdown, onboarding and note-action principles still apply.
+## Maintain the skill
 
-![Book reader skill test](examples/reader/onboarding-paper.png)
+Edit this Git repository, update the relevant reference and commit the change. Keep enduring preferences separate from choices made for one product. Replace superseded guidance rather than adding contradictory rules. Push, then run the update command on each PC.
 
-## Install on each Windows PC
+[Validation notes](personal-ui/references/validation.md) record the independent tests and their limits. [The research notes](docs/skill-guidance-research.md) explain the packaging, trigger and evaluation decisions. Cloak remains the visual example.
 
-Use a Git clone outside OneDrive. GitHub CLI must have access to this private repository.
-
-```powershell
-gh repo clone zF4ke/skills "$env:USERPROFILE\Projects\skills"
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Projects\skills\install.ps1"
-```
-
-This installs the whole skill in `%USERPROFILE%\.codex\skills\personal-ui`. Codex can discover it on the next turn. Invoke `$personal-ui` or let the skill description match relevant design work. Start at [SKILL.md](personal-ui/SKILL.md).
-
-Pass `-SkillsFolder <folder>` to install into another agent's actual discovery folder. The script copies the complete directory with resources.
-
-## Update
-
-```powershell
-git -C "$env:USERPROFILE\Projects\skills" pull --ff-only
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Projects\skills\install.ps1"
-```
-
-Edit the Git checkout, update the relevant reference, commit and reinstall. Installation is a copy, not a OneDrive link. Current instructions override historical preferences.
-
-## Skill test
-
-[Validation notes](personal-ui/references/validation.md) describe a book-reader task given to an independent agent. [The self-contained example](examples/reader/index.html) and paper/night screenshots show a different product using the same interaction lessons. Open the HTML to test themes, fonts and notes. This is one forward test, not a guarantee of every future design.
+For a manual local install, clone the repository outside OneDrive and run `install.ps1`. It copies `personal-ui` to `%USERPROFILE%\.codex\skills` by default. Pass `-SkillsFolder` for another agent's discovery folder. This fallback is not tracked by the skills CLI; use the standard command above for CLI-managed updates.

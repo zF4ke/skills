@@ -6,6 +6,10 @@ The filenames below use one-based PDF page numbers. [examples/index.json](exampl
 
 ## Dark hierarchy and controls
 
+[Cloak's project manager](examples/cloak/projects.png) is the owner's current approved product example. It was captured from the real Windows app with isolated test repositories. Use it to study compact utility layout and restrained accent placement, then adapt those principles to the current product. The live implementation is in [zF4ke/cloak](https://github.com/zF4ke/cloak).
+
+For setup work, inspect [Cloak onboarding](examples/cloak/onboarding.png) and [its installer](examples/cloak/setup.png). The onboarding shows connected phases, a fitted form and grouped navigation. The installer shares the app's controls and colors. These captures are from the 0.2.0 release candidate, not proposed mockups.
+
 - [Colors That Ruin, page 4](examples/colors-that-ruin-p4.png) shows a black canvas, quiet grouped metadata and one purple object illustration. Transfer the neutral hierarchy. Its tall mobile card layout is not Cloak's layout.
 - [Colors That Ruin, page 1](examples/colors-that-ruin-p1.png) provides the related earlier cloud-storage composition for comparison.
 - [Software colors, page 4](examples/software-colors-p4.png) is a neutral value progression. Use value to establish hierarchy before adding color.

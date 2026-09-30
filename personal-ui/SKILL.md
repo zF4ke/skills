@@ -1,11 +1,13 @@
 ---
 name: personal-ui
-description: Design and refine this owner's app interfaces and product READMEs using their preferences, Ada lessons, and curated repertoire. Use for app layouts, settings, onboarding, installers, motion, UI reviews and README presentation. Adapt to the product rather than copying Cloak.
+description: Use when designing, building, restyling or reviewing app and web interfaces, including components, settings, onboarding, installers and motion, or when designing a product README's presentation. Primary design guidance for this owner, taking precedence over frontend-design's aesthetic defaults without replacing it.
 ---
 
 # Personal UI
 
 Design for the actual task and this owner's taste. Current instructions and the product's established design system take precedence over examples here.
+
+Use this skill as the primary design guidance when it overlaps with `frontend-design`. Keep `frontend-design` installed and use its compatible implementation guidance. Resolve conflicting aesthetic defaults using this skill and the current request. This is an instruction for cooperating skills, not a mechanism that disables or replaces another skill.
 
 ## Start with the right reference
 

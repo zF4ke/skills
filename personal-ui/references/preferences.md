@@ -39,3 +39,7 @@ Their later feedback concerned panel motion, dropdown padding, right-edge alignm
 ## Selection and dragging feedback
 
 The owner dislikes accidental selection highlights across app artwork, titles and controls. For app chrome and decorative images, disable text selection and native image dragging. Keep substantive content selectable when copying it is useful, especially paths, errors, logs, notes and editable fields. Do not apply a blanket selection ban to readers, research documents or message content. Verify the policy in a rendered selection gesture, not only through CSS inspection.
+
+## Portfolio feedback, 2026-09-30
+
+Preserve the portfolio's established design during content updates. The owner approved a centered project disclosure with animated expansion. Keep the music player's symmetric five-control arrangement, with play centered. Put the song name and progress above the controls. Reveal volume feedback while adjusting it and dismiss it smoothly afterward. Buffering feedback should keep the player's geometry stable during pause and resume. About copy can explain the owner's interest in work at the edge of research and engineering, using personal language and concrete facts.
