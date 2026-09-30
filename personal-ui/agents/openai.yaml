@@ -1,0 +1,4 @@
+interface:
+  display_name: "Personal UI"
+  short_description: "Design apps with your taste and curated references"
+  default_prompt: "Use $personal-ui to design and verify this interface."

@@ -1,0 +1,146 @@
+[
+  {
+    "file": "colors-that-ruin-p1.png",
+    "source": "Colors That Ruin.pdf",
+    "page": 1,
+    "totalPages": 4
+  },
+  {
+    "file": "colors-that-ruin-p4.png",
+    "source": "Colors That Ruin.pdf",
+    "page": 4,
+    "totalPages": 4
+  },
+  {
+    "file": "dashboard-ui-p1.png",
+    "source": "Dashboard UI.pdf",
+    "page": 1,
+    "totalPages": 12
+  },
+  {
+    "file": "dashboard-ui-p5.png",
+    "source": "Dashboard UI.pdf",
+    "page": 5,
+    "totalPages": 12
+  },
+  {
+    "file": "dashboard-flaws-p1.png",
+    "source": "Dashboard Flaws.pdf",
+    "page": 1,
+    "totalPages": 8
+  },
+  {
+    "file": "dashboard-flaws-p8.png",
+    "source": "Dashboard Flaws.pdf",
+    "page": 8,
+    "totalPages": 8
+  },
+  {
+    "file": "every-ui-concept-p1.png",
+    "source": "Every UI Concept.pdf",
+    "page": 1,
+    "totalPages": 13
+  },
+  {
+    "file": "every-ui-concept-p7.png",
+    "source": "Every UI Concept.pdf",
+    "page": 7,
+    "totalPages": 13
+  },
+  {
+    "file": "every-ui-concept-p13.png",
+    "source": "Every UI Concept.pdf",
+    "page": 13,
+    "totalPages": 13
+  },
+  {
+    "file": "micro-dashboard-p2.png",
+    "source": "Micro Dashboard.pdf",
+    "page": 2,
+    "totalPages": 5
+  },
+  {
+    "file": "micro-dashboard-p3.png",
+    "source": "Micro Dashboard.pdf",
+    "page": 3,
+    "totalPages": 5
+  },
+  {
+    "file": "micro-animations-p13.png",
+    "source": "Micro-Animations.pdf",
+    "page": 13,
+    "totalPages": 45
+  },
+  {
+    "file": "micro-animations-p25.png",
+    "source": "Micro-Animations.pdf",
+    "page": 25,
+    "totalPages": 45
+  },
+  {
+    "file": "micro-animations-p45.png",
+    "source": "Micro-Animations.pdf",
+    "page": 45,
+    "totalPages": 45
+  },
+  {
+    "file": "software-colors-p1.png",
+    "source": "Software colors.pdf",
+    "page": 1,
+    "totalPages": 17
+  },
+  {
+    "file": "software-colors-p4.png",
+    "source": "Software colors.pdf",
+    "page": 4,
+    "totalPages": 17
+  },
+  {
+    "file": "software-colors-p17.png",
+    "source": "Software colors.pdf",
+    "page": 17,
+    "totalPages": 17
+  },
+  {
+    "file": "software-sections-p1.png",
+    "source": "Software Sections.pdf",
+    "page": 1,
+    "totalPages": 12
+  },
+  {
+    "file": "software-sections-p4.png",
+    "source": "Software Sections.pdf",
+    "page": 4,
+    "totalPages": 12
+  },
+  {
+    "file": "software-sections-p12.png",
+    "source": "Software Sections.pdf",
+    "page": 12,
+    "totalPages": 12
+  },
+  {
+    "file": "kill-boring-designs-p1.png",
+    "source": "Kill boring designs.pdf",
+    "page": 1,
+    "totalPages": 7
+  },
+  {
+    "file": "kill-boring-designs-p7.png",
+    "source": "Kill boring designs.pdf",
+    "page": 7,
+    "totalPages": 7
+  },
+  {
+    "file": "swipe-anims-p1.png",
+    "source": "Swipe Anims.pdf",
+    "page": 1,
+    "totalPages": 34
+  },
+  {
+    "file": "swipe-anims-p3.png",
+    "source": "Swipe Anims.pdf",
+    "page": 3,
+    "totalPages": 34
+  }
+]
