@@ -4,7 +4,7 @@
 
 ## Install
 
-Install with the [skills.sh CLI](https://github.com/vercel-labs/skills). You need Node.js and Git, plus access to this private repository. On a new PC, run `gh auth login` and `gh auth setup-git` first if you use GitHub CLI for Git authentication.
+Install with the [skills.sh CLI](https://github.com/vercel-labs/skills). You need Node.js and Git. For a private repository, configure Git authentication first, for example with `gh auth login` and `gh auth setup-git`.
 
 ```powershell
 npx skills add zF4ke/skills --skill personal-ui --global --agent codex claude-code opencode
@@ -58,7 +58,7 @@ The [skill entry point](personal-ui/SKILL.md) directs the agent to the relevant 
 | [Repertoire](personal-ui/references/repertoire.md) | Selected images, original PDFs and their source mapping. |
 | [READMEs](personal-ui/references/readmes.md) | Presentation, installation paths, screenshots and linked guides. |
 
-This repository is private because it contains personal screenshots and collected design references. Those references are for study, not artwork to redistribute in an app. Cloak's example captures the real application using isolated test projects; it contains no personal project data.
+The library contains personal screenshots and collected design references. Those references are for study, not artwork to redistribute in an app. Cloak's example captures the real application using isolated test projects; it contains no personal project data.
 
 ## Maintain the skill
 
