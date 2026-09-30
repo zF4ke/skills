@@ -46,6 +46,8 @@ Progress connectors should meet the step icons without a visible gap. Draw the t
 
 When a dialog exceeds the available height, scroll its body and keep the header and actions outside that scrolling area. A sticky footer over the whole dialog can cover the final field or error. Show a destructive action's consequence in the first visible part of its review, before long paths or other details, and check that it is visible at the smallest supported window size. Disable source selection while an inspection is pending so an old response cannot describe a new selection.
 
+When an async failure adds recovery controls below a long form, reveal that region within the dialog's scrolling body. Newly loaded recovery controls need the same treatment. A successful DOM check can still leave the user looking at the original form with the error offscreen; verify the control's rendered bounds and inspect its screenshot.
+
 Separate groups only where their meaning requires it. Start with proximity and spacing. A Save action stays beside the form it owns, before logs or unrelated tools. A rule above and below a lone button can sever that relationship. One quiet section background can group a substantial form; several nested cards and separators usually obscure it.
 
 ## References and provenance
