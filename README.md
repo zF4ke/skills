@@ -32,9 +32,13 @@ Keep `frontend-design` installed. Personal UI takes precedence when their aesthe
 
 ### Update
 
+Repeat the explicit install command to refresh every selected agent, including independent copies:
+
 ```powershell
-npx skills update personal-ui --global
+npx skills add zF4ke/skills --skill personal-ui --global --agent codex claude-code opencode --copy
 ```
+
+`npx skills update personal-ui --global` refreshes the shared installation. In the tested CLI version, it left an independent Claude Code copy unchanged. Use the command above when you installed with `--copy`.
 
 To inspect the repository's available skills without installing:
 
