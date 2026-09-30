@@ -43,3 +43,13 @@ The owner dislikes accidental selection highlights across app artwork, titles an
 ## Portfolio feedback, 2026-09-30
 
 Preserve the portfolio's established design during content updates. The owner approved a centered project disclosure with animated expansion. Keep the music player's symmetric five-control arrangement, with play centered. Put the song name and progress above the controls. Reveal volume feedback while adjusting it and dismiss it smoothly afterward. Buffering feedback should keep the player's geometry stable during pause and resume. About copy can explain the owner's interest in work at the edge of research and engineering, using personal language and concrete facts.
+
+The owner requested a fluid spring transition between the full music player and a small music-note circle in the bottom-right corner. Preserve playback through this transition. Volume feedback should disappear promptly after adjustment. The reported project-icon alignment issue applies specifically to the expanded project view.
+
+Start the player minimized as a music-note circle. Remove the manual minimize button and automatically collapse shortly after the pointer leaves its area, around 700 ms. Returning to the area cancels closing. Keep it open during keyboard interaction and allow Escape to collapse it.
+
+The minimized music note should move very subtly while a song is playing, so playback remains visible without opening the player. Stop the movement when paused and honor reduced motion.
+
+The expanded player needs a clear idle placeholder in the song-name area, rather than an empty header above the controls. Keep the selected song name visible when playback pauses.
+
+Add waveform bars behind the minimized note while music plays. Anchor wide bars to the bottom of the circle, using moderate heights so they stay below the top edge and keep the note clear. A decorative rhythm is acceptable, provided it follows the real playing state. Keep the circle's visible right and bottom margins equal, accounting for the scrollbar.
