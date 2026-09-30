@@ -7,7 +7,7 @@
 Install with the [skills.sh CLI](https://github.com/vercel-labs/skills). You need Node.js and Git, plus access to this private repository. On a new PC, run `gh auth login` and `gh auth setup-git` first if you use GitHub CLI for Git authentication.
 
 ```powershell
-npx skills add zF4ke/skills --skill personal-ui --global --agent codex opencode
+npx skills add zF4ke/skills --skill personal-ui --global --agent codex claude-code opencode
 ```
 
 Run this on each PC. `--global` makes the skill available across projects. Change the agent names to target the agents you use, or omit `--agent` to choose interactively. The installer includes the skill's references and assets. It uses a shared copy with links by default and falls back to copies when linking fails. Add `--copy` if you prefer independent copies.
@@ -18,7 +18,7 @@ Design guidance for interfaces, onboarding, settings, installers and product REA
 
 [Cloak](https://github.com/zF4ke/cloak) is the current example. Its compact dark layout, purple accent, connected setup steps and themed controls reflect the feedback that shaped this skill. Other products should use a composition that fits their own purpose.
 
-<p align="center"><img src="personal-ui/references/examples/cloak/projects.png" width="760" alt="Cloak's project manager with new, import and clone actions, and two managed projects" /></p>
+<p align="center"><img src="personal-ui/references/examples/cloak/projects-rounded.svg" width="760" alt="Cloak's project manager with new, import and clone actions, and two managed projects" /></p>
 
 ### Use it
 
@@ -62,4 +62,4 @@ Edit this Git repository, update the relevant reference and commit the change. K
 
 [Validation notes](personal-ui/references/validation.md) record the independent tests and their limits. [The research notes](docs/skill-guidance-research.md) explain the packaging, trigger and evaluation decisions. Cloak remains the visual example.
 
-For a manual local install, clone the repository outside OneDrive and run `install.ps1`. It copies `personal-ui` to `%USERPROFILE%\.codex\skills` by default. Pass `-SkillsFolder` for another agent's discovery folder. This fallback is not tracked by the skills CLI; use the standard command above for CLI-managed updates.
+For a local checkout, `install.ps1` uses the same skills CLI and lets you choose agents interactively. It supports `-Agents codex,claude-code,opencode`, `-Copy` and `-Yes`. Use the GitHub command above when you want updates to come from this repository.
