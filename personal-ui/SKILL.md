@@ -23,6 +23,8 @@ Identify the main action, the information needed to choose it, and the secondary
 
 Use existing semantic tokens and components when they fit. Shadcn/ui is a useful reference for understated controls, keyboard behavior and dark neutral surfaces. Preserve its behavior if restyling its components. A reusable design system includes geometry, state, motion and copy, not only colors.
 
+Give buttons and adjacent helper text an explicit gap from the spacing scale. Check their rendered bounds after shared margins apply. Finish when the text clears the button by the chosen gap, including when it wraps.
+
 Concentrate accent color in selection and the immediate action. Use a consistent icon family. Keep names beside icons when identification matters. Make secondary configuration deliberate to open and easy to leave.
 
 Write direct action labels, useful errors and short explanations only where they help a decision. Use sentence case and plain punctuation. The owner dislikes tiny redundant status text, em dashes, middle-dot separators and uppercase subtitles. Tasteful emojis and expressive motion are welcome when they serve the product.
