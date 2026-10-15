@@ -16,6 +16,8 @@ The owner values clean, modern interfaces that feel intentional. Minimal means t
 - Use color where it has a job. Do not tint every card, create competing accents or rely on color as the only state cue.
 - Make density fit the task. Reading and editing need room. Small utilities need a compact footprint and useful space, rather than oversized headers or empty dashboard panels.
 - Keep right gutters correct at rest, hover, focus and menu-open states. Hidden actions must not leave the visible timestamp or content cramped against the edge.
+- Use toggles for boolean controls instead of checkbox squares. Keep a visible label, keyboard operation, checked semantics and disabled/error feedback. Single-choice radio groups remain distinct.
+- Avoid repeating a field label immediately above a self-explanatory input. Ada's provider key belongs inside the input as its placeholder, with a persistent accessible name. Keep separate labels when needed to distinguish ambiguous fields.
 
 ## Cloak feedback, 2026-09-30
 
@@ -60,6 +62,12 @@ When the provider supplies reasoning text or a summary, make it inspectable thro
 Use Archive for reversible dismissal; reserve trash for deletion. The owner chose Archive after comparing Archive, Hide and Sweep in Ada's toolbar.
 
 Task history should show compact rows with a consistent icon, readable tool name and command or target. The owner explicitly requested opening tool details inline from those rows. Give an opened row more separation while keeping adjacent closed rows close together. Avoid generic Tool calls containers that conceal the action's identity. Show full output on demand, and avoid repeating the same request and execution when their recorded identities establish a match.
+
+Completed tool rows have no visible checkmark or Done label. Running and unsuccessful actions still need status. This does not prohibit a quiet green tick beside Connected in a provider heading, which the owner requested to make connection state easier to recognize.
+
+Settings and Models use the established heading scale and shared field typography. Match Sound with the other settings sections. When a dedicated tab has room, show its controls directly rather than retaining an old card or accordion. General should fit its actual content. During native expansion, retain an already-visible scrollbar but delay a newly needed thumb until the animation settles. Reserve its gutter to avoid horizontal shifts.
+
+Use each installed project's actual app icon in Ada's launcher when available, with a consistent fallback. Screen sharing needs immediate preparation feedback, a blinking active indicator with reduced-motion support and a prominent red Stop sharing button with light text. A screenshot preview should identify the last image actually sent, not imply continuous model vision. Mark native computer input separately with a visible, non-interactive screen edge.
 
 ## Selection and dragging feedback
 

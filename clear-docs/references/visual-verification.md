@@ -16,6 +16,8 @@ Remove text that adds no new meaning. A title repeated above the image, a captio
 
 Check narrow and normal layouts for web documentation. Check the requested theme across page backgrounds, callouts, tables, illustrations and links. Inspect actual rendered characters for encoding damage or missing glyphs.
 
+For UI screenshots, check the automatic window size as well as a manually resized window. Capture short and long tabs and wait for native motion to settle. Verify that section headings share their intended type scale, fields do not repeat unnecessary labels, short content has no stray scrollbar, and transitions do not flash a new scrollbar or shift text sideways. Use the owner's current control preferences, including toggles, in both the app and its screenshots.
+
 Finish this step when every figure is readable without zooming beyond its intended size, each connector has the right endpoints, and no unresolved overlap, clipping or redundant decoration remains. Passing a bounding-box check is additional evidence, not this criterion.
 
 ## Inspect the complete document
