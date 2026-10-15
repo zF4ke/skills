@@ -55,6 +55,12 @@ The owner requested T3 Code Nightly's blacks and grays with Ada's aqua accent re
 
 When the provider supplies reasoning text or a summary, make it inspectable through a compact animated expansion beside the reply status. A phase label alone leaves the owner guessing during a long response. Explain retries using their actual cause and countdown. Distinguish correcting a response from waiting for a provider rate limit. Keep opaque provider data out of the reader and do not invent thinking steps when none are supplied.
 
+## Ada task history, 2026-10-15
+
+Use Archive for reversible dismissal; reserve trash for deletion. The owner chose Archive after comparing Archive, Hide and Sweep in Ada's toolbar.
+
+Task history should show compact rows with a consistent icon, readable tool name and command or target. The owner explicitly requested opening tool details inline from those rows. Give an opened row more separation while keeping adjacent closed rows close together. Avoid generic Tool calls containers that conceal the action's identity. Show full output on demand, and avoid repeating the same request and execution when their recorded identities establish a match.
+
 ## Selection and dragging feedback
 
 The owner dislikes accidental selection highlights across app artwork, titles and controls. For app chrome and decorative images, disable text selection and native image dragging. Keep substantive content selectable when copying it is useful, especially paths, errors, logs, notes and editable fields. Do not apply a blanket selection ban to readers, research documents or message content. Verify the policy in a rendered selection gesture, not only through CSS inspection.
