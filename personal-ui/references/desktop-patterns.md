@@ -14,6 +14,8 @@ Use a small spacing scale, usually 4, 8, 12, 16, 20 and 24 CSS pixels. Repeated 
 
 Keep body text readable, usually 13 to 14 pixels in a Windows utility. Reserve 12 pixels for genuinely secondary text. Establish hierarchy with placement and weight before making labels tiny. Native Segoe UI Variable fits Windows. A different product may warrant another face; the owner has not banned native or common fonts.
 
+When extending an existing interface, match its type scale and semantic roles. Compare computed font family, size, weight and line height with a neighboring control. Check tabs and native form fields as well as body text. Ada's Settings categories inherited a 16px browser default beside 13px navigation, despite using the same font family. Reuse the established token and verify the rendered result instead of choosing a new local size.
+
 Allow long names and paths to wrap or truncate with an accessible full value. Project names should survive next to branch, status and actions. Keep action spacing and right edge stable when hover controls appear.
 
 For dark apps, distinguish canvas, section and control with a few close neutral values. Text contrast should remain strong. Black is not a reason to make disabled-looking controls everywhere. Purple can identify the current selection without making every heading purple.
