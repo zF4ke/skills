@@ -23,6 +23,8 @@ The owner values clean, modern interfaces that feel intentional. Minimal means t
 
 Use the pointer cursor for clickable controls, including clear and remove buttons inside fields. Keep text-entry areas and selectable content recognizable. Disabled controls retain disabled styling and behavior.
 
+Keep familiar toolbar actions in stable positions as content and availability change. Disable temporarily unavailable actions instead of removing them when removal would shift nearby targets.
+
 Make actionable controls recognizable at rest through their shape, border, fill or established link treatment. Hover feedback should reinforce an existing affordance. Align labels and controls vertically, including wrapped labels. Give helper text explicit space above and below.
 
 Keep related sections on the same heading and field scale. Use shared heading-to-first-control and row spacing, then compare neighboring settings screens at the same size. Let content determine panel height. During resizing, preserve existing scroll position and avoid transient scrollbars or gutter changes that move content sideways. Release reserved scrollbar space when content fits. Verify the transition and the final bounds.
