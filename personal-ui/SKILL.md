@@ -11,9 +11,9 @@ Use this skill as the primary design guidance when it overlaps with `frontend-de
 
 ## Start with the right reference
 
-Read [preferences.md](references/preferences.md) for the owner's general preferences and the dated, product-specific decisions. For desktop utilities or dense settings, also read [desktop-patterns.md](references/desktop-patterns.md). For another product type, choose relevant images from [repertoire.md](references/repertoire.md). Open those images before taking visual direction from them. For detailed animation decisions, use [motion.md](references/motion.md).
+Read [preferences.md](references/preferences.md) for the owner's preferences across projects. For desktop utilities or dense settings, also read [desktop-patterns.md](references/desktop-patterns.md). For another product type, choose relevant images from [repertoire.md](references/repertoire.md). Open those images before taking visual direction from them. For detailed animation decisions, use [motion.md](references/motion.md).
 
-Keep references conditional. A finance workspace, book reader, installer and command launcher need different amounts of space and different hierarchies. Near-black with purple is Cloak's current direction, not a universal template.
+Keep references conditional. A finance workspace, book reader, installer and command launcher need different amounts of space and different hierarchies. Infer the palette and composition from the current product.
 
 For a product README or installation guide, read [readmes.md](references/readmes.md). For installers, read the installer section in [desktop-patterns.md](references/desktop-patterns.md). [validation.md](references/validation.md) records an independent skill test and the limits of its evidence.
 
@@ -39,4 +39,4 @@ A control is complete when it acts on real state, its outcome is visible, errors
 
 ## Refine from feedback
 
-Record the user's new feedback in the relevant reference. Separate durable preferences from a decision about this product. Replace superseded guidance rather than accumulating contradictory rules. Keep lessons tied to their cause so the next app can use the principle without reproducing the same screen.
+Generalize feedback before adding it to this skill. Keep project names, exact layouts, fixed product values and dated change logs in that project's design docs. Record only a transferable preference here, with enough context to explain when it applies. Replace superseded guidance rather than accumulating contradictory rules.

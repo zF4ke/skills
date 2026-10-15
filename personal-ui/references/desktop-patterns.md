@@ -14,19 +14,19 @@ Use a small spacing scale, usually 4, 8, 12, 16, 20 and 24 CSS pixels. Repeated 
 
 Keep body text readable, usually 13 to 14 pixels in a Windows utility. Reserve 12 pixels for genuinely secondary text. Establish hierarchy with placement and weight before making labels tiny. Native Segoe UI Variable fits Windows. A different product may warrant another face; the owner has not banned native or common fonts.
 
-When extending an existing interface, match its type scale and semantic roles. Compare computed font family, size, weight and line height with a neighboring control. Check tabs and native form fields as well as body text. Ada's Settings categories inherited a 16px browser default beside 13px navigation, despite using the same font family. Reuse the established token and verify the rendered result instead of choosing a new local size.
+When extending an existing interface, match its type scale and semantic roles. Compare computed font family, size, weight and line height with a neighboring control. Check tabs and native form fields as well as body text. Reuse the established token and verify the rendered result instead of choosing a new local size.
 
 Allow long names and paths to wrap or truncate with an accessible full value. Project names should survive next to branch, status and actions. Keep action spacing and right edge stable when hover controls appear.
 
-For dark apps, distinguish canvas, section and control with a few close neutral values. Text contrast should remain strong. Black is not a reason to make disabled-looking controls everywhere. Purple can identify the current selection without making every heading purple.
+For dark apps, distinguish canvas, section and control with a few close neutral values. Text contrast should remain strong. Black is not a reason to make disabled-looking controls everywhere. An accent can identify the current selection without tinting every heading.
 
 ## Glass and native edges
 
-Use material effects only when they help distinguish layers. Ada's acrylic boundary may suit a launcher; Cloak uses solid surfaces. Liquid Glass is inspiration for light, depth and continuity, not a blur applied to every field.
+Use material effects only when they help distinguish layers. Liquid Glass is inspiration for light, depth and continuity, not a blur applied to every field.
 
 One owner draws the outside edge. A native Windows window owns its rounding, shadow and outline. The renderer fills the client area without a second outer border or radius. Browser previews need their own border because they have no native window frame. Check both implementations.
 
-Ada previously drew a CSS frame inside native rounding, causing doubled corners and exposed crescents. Its navigation actions also lost their right gutter when hidden action slots remained beside visible receipts. These are geometry bugs, not aesthetic preferences.
+Check for doubled corners where native rounding meets renderer backgrounds. Hidden action slots must preserve the visible content's gutter.
 
 ## Components
 
@@ -42,9 +42,9 @@ Ada previously drew a CSS frame inside native rounding, causing doubled corners 
 
 For dropdowns, give the arrow a real inner inset, usually 12 pixels, and reserve its own slot so long values cannot crowd it. Style the opened menu, options, highlight and selection with the same tokens. Test keyboard navigation, Escape, focus return and viewport collisions. Portaled menus inside native dialogs must render in the dialog's top layer. Adding right padding to an OS-owned arrow does not reliably solve its geometry or menu theme.
 
-For a short onboarding sequence, tie the phases together visibly. Cloak uses phase icons over a connecting track with an animated accent fill. Numbered circles and wide gaps alone looked disconnected to the owner. Another workflow may need a different progress treatment. Size a dialog around the active form, let it grow for real content, and keep a clear relationship between that form and its actions.
+For a short onboarding sequence, tie the phases together visibly. Phase icons and a connecting track can clarify sequence when the workflow benefits from them. Choose the progress treatment for the actual task. Size a dialog around the active form, let it grow for real content, and keep a clear relationship between that form and its actions.
 
-Progress connectors should meet the step icons without a visible gap. Draw the track beneath their opaque backgrounds and verify the first, middle and final states. Cloak's current-step shadow erased four pixels of the connector, even though its fill reached the right coordinate. Opening starts at the actual first-step value without replaying a backwards animation.
+Progress connectors should meet the step icons without a visible gap. Draw the track beneath their opaque backgrounds and verify the first, middle and final states. A step shadow can erase part of a connector even when its fill reaches the right coordinate. Opening starts at the actual first-step value without replaying a backwards animation.
 
 When a dialog exceeds the available height, scroll its body and keep the header and actions outside that scrolling area. A sticky footer over the whole dialog can cover the final field or error. Show a destructive action's consequence in the first visible part of its review, before long paths or other details, and check that it is visible at the smallest supported window size. Disable source selection while an inspection is pending so an old response cannot describe a new selection.
 
@@ -54,9 +54,7 @@ Separate groups only where their meaning requires it. Start with proximity and s
 
 ## References and provenance
 
-- Ada Git design guide, inspected at origin/master `10dcbd0`, `docs/design/design-system.md`. Its palette is historical to Ada, not the current Cloak accent.
-- Ada installer behavior from that guide: vector logo, UI text, byte-based progress, calm motion, focused completion.
-- [T3 Code source](https://github.com/pingdotgg/t3code), especially `apps/web/src/index.css` and `packages/shared/src/themePalettes.ts`. The owner's screenshot is the stronger reference for this request.
+- [T3 Code source](https://github.com/pingdotgg/t3code), especially `apps/web/src/index.css` and `packages/shared/src/themePalettes.ts`. Current product references take precedence over these examples.
 - [shadcn/ui](https://ui.shadcn.com/docs/components) for control behavior and neutral dark hierarchy. Use official docs for the components selected during implementation.
 - [Windows rounded corners](https://learn.microsoft.com/en-us/windows/apps/desktop/modernize/ui/apply-rounded-corners) for native frame ownership.
 ## Native caption overlays
@@ -64,7 +62,7 @@ Separate groups only where their meaning requires it. Start with proximity and s
 Windows caption-button overlays can cover a CSS border drawn inside the renderer title bar. A divider that stops before the buttons looks accidentally cut off. Place a necessary title-bar divider across the whole frame just below the overlay boundary. Verify it in the native app at the user's display scale; a browser screenshot does not include native caption buttons. Keep these boundaries purposeful rather than adding more separators to interior forms.
 ## Installers
 
-Reuse the app's semantic tokens, control components, typography, icon family and motion. The installer should look like part of the product, not an unrelated default wizard. Ada's custom setup uses real HTML text and SVG, genuine pending work and copy progress. Cloak applies the same approach with a restrained owned mark, one immediate Install action, explicit failure and a ready state. The application itself may have more content than setup; matching design does not require identical layouts.
+Reuse the app's semantic tokens, control components, typography, icon family and motion. The installer should look like part of the product, not an unrelated default wizard. Use real UI text and vector artwork, progress tied to work, explicit failure and a ready state. The application itself may have more content than setup; matching design does not require identical layouts.
 
 Keep installation progress tied to copied bytes or an actual operation. Distinguish download, copying and registration when the user needs to understand a delay. Keep paths copyable, decorative art non-draggable, and errors actionable without losing the current attempt. Test extracted installers and updates, not only a browser rendering of the welcome page. System-owned title-bar overlays and app corners need native verification.
 
