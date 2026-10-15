@@ -23,3 +23,9 @@ The authenticated GitHub command was exercised on this PC with the skills CLI 1.
 A subsequent `skills update personal-ui --global` refreshed the shared installation but left two changed references stale in the independent Claude copy. The README now recommends repeating installation with explicit agent selection for copies. The install and update command evidence must remain distinct.
 
 The PowerShell wrapper was exercised in an isolated Windows profile for Codex, Claude Code and OpenCode. Every bundled file matched byte for byte. A normal linked GitHub installation created the canonical skill and a Claude directory junction. After the installer reference image changed in Git, the standard update command refreshed the canonical skill and the linked Claude view; all 53 files then matched, with text line endings normalized. Thus both installation modes work, while independent copies require explicit reinstall to refresh all selected agents.
+
+## Audio-settings forward check
+
+October 15, 2026. An isolated Vox-style mock tested the updated interaction guidance on another product. It kept the cream faceplate, proportional type and wood edges, used visible setting rows and a named Edit mix action leading to a focused editor with Back and Save mix. A value selector retained its arrow without becoming an accordion.
+
+All three rendered PDF pages were inspected at 900 pixels wide, including a signal-flow figure. The check exposed older reference text that still encouraged inline expansion; those passages now require an explicit owner request. This was a static composition and documentation check, not live Vox behavior, keyboard interaction or owner approval of a redesign. No Vox source changed.

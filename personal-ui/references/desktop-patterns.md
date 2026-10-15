@@ -6,7 +6,7 @@ Compact utilities start with a bounded window and the useful action. Use a short
 
 Configuration belongs in a visible hierarchy. Group related fields with spacing and concise headings. Put substantial secondary work behind a clearly named Edit, Details or History action that opens a focused view. Keep consequences beside consequential choices. Down-chevron accordions and hidden expandable containers require an explicit owner request; reducing density is not sufficient reason to add them.
 
-Object details can expand below the selected row. Avoid repeated cards for the same object. An independent group of options may deserve one boundary. A field inside a section rarely needs another reflective box.
+Open object details through a named Details action leading to a focused view. Expand them below a row only when the owner explicitly requests that interaction. Avoid repeated cards for the same object. An independent group of options may deserve one boundary. A field inside a section rarely needs another reflective box.
 
 ## Geometry and readability
 

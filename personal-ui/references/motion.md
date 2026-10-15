@@ -1,12 +1,12 @@
 # Motion
 
-Use motion to show continuity between real states. A selected navigation background can move between controls. A panel emerges from its trigger. A disclosure expands in place. An action acknowledges the press immediately and then displays genuine pending work.
+Use motion to show continuity between real states. A selected navigation background can move between controls. A focused view emerges from its trigger. An explicitly requested disclosure expands in place. An action acknowledges the press immediately and then displays genuine pending work.
 
 For compact React utilities, a starting spring is stiffness 380 to 500 with damping 30 to 36. These are examples, not fixed constants. Tune mass, displacement and content size together. Use less displacement for small menus than for large sheets. Enter can take slightly longer than exit.
 
 Prefer one shared motion vocabulary. Avoid every control bouncing with a different spring. Press scales near .96 to .98 and a small hover response are usually enough. Translate or scale without changing neighboring layout unless a real expansion requires it.
 
-Animate the height of disclosures so content moves coherently. When closing, return focus to the trigger if it was inside the content, and make exiting descendants inert. Preserve drafts when panels switch. Keep object positions stable across periodic data refreshes.
+When the owner explicitly requests a disclosure, animate its height so content moves coherently. When closing, return focus to the trigger if it was inside the content, and make exiting descendants inert. Preserve drafts when views switch. Keep object positions stable across periodic data refreshes.
 
 Loading should be recognizable. A static faint clock can look like a broken app. Use a visible spinner or a short activity line while waiting. Reduced motion should replace movement with a clear stationary pending state, not remove the information.
 

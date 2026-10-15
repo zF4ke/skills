@@ -21,7 +21,7 @@ The owner values clean, modern interfaces that feel intentional. Minimal means t
 
 The owner rejected the first desktop pass as too roomy, too gray and accented with teal. Requested near-black like their T3 Code Nightly screenshot, shadcn/ui-like restraint, a purple accent, more icons and a tighter medium rectangle centered on the screen. Large unused space is a failure in this utility.
 
-The current direction is near-black canvas, slightly raised neutral controls, subtle borders, purple selection/action, a compact icon rail, square-ish setup actions and secondary configuration behind disclosure. This decision applies to Cloak. Another app can use a different accent, navigation or window shape.
+The current direction is near-black canvas, slightly raised neutral controls, subtle borders, purple selection/action, a compact icon rail and square-ish setup actions. The earlier layout put secondary configuration behind disclosure. The owner's later preference supersedes that pattern: use named Edit, Details or History destinations unless expansion is explicitly requested. Cloak's palette and window shape remain product-specific.
 
 Later feedback identified repeated defects. Dropdown arrows need a stable inner right inset, and the opened menu must share the app's theme. A styled trigger paired with an unstyled system menu is incomplete. The setup dialog's numbered circles felt disconnected; the owner requested a visible connecting line that fills purple as progress advances. Icons now identify its phases. Keep the dialog fitted to the current content rather than reserving a blank footer gap.
 
