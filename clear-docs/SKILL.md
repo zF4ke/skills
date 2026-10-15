@@ -27,6 +27,8 @@ An authorized rewrite can proceed without outline approval. Ask only when a miss
 
 Do not solve density by turning every sentence into a bullet. A page should have rhythm and a clear hierarchy, not a second wall made of headings.
 
+Keep visible text to what helps the reader act, understand or navigate. Remove decorative microcopy, repeated corner labels, redundant captions and recurring metadata. Give useful content readable type instead of shrinking secondary text into the margins.
+
 Apply the owner's writing preferences. Avoid em dashes, inflated language and invented technical labels. Read [examples.md](references/examples.md) when the text is technically correct but still hard to understand.
 
 ## Choose what belongs
@@ -37,7 +39,7 @@ Distinguish implemented behavior, verified behavior and requirements still missi
 
 For a product README, lead with the product, its primary download or starting action, and one current screenshot of the main experience. Use consistent, centered image widths. Keep feature summaries short and link to focused guides.
 
-For diagrams, choose a visual form that fits the question. A timeline, nested map, evidence graph and comparison need different compositions. Keep an established theme, but make relationships and hierarchy carry meaning. Avoid turning every subject into the same boxes and arrows.
+For diagrams, choose a visual form that fits the question. A timeline, nested map, evidence graph and comparison need different compositions. Keep an established theme, but make relationships and hierarchy carry meaning. Keep semantic labels readable in the actual page or document. Remove decorative markers, repeated subtitles and footer notes from graphs and images. Hollow bullets and node dots need a specific meaning; plain text needs no marker. Captions should add information that the image does not already show. Avoid turning every subject into the same boxes and arrows.
 
 For a substantial documentation refresh, consider chapter banners that help readers recognize the subject. Match the product's visual language and give different topics distinct motifs. Keep headings as selectable text, artwork secondary and the next action visible. A banner belongs at an entry or chapter opening, not above every section.
 
@@ -47,6 +49,6 @@ For a requested PDF or manual, read [manuals.md](references/manuals.md). Do not 
 
 Read the first screen as a newcomer. Can they identify the next action without reading the whole page?
 
-Check commands, UI labels, local links and diagram facts against the implementation. Render the README and representative long and short pages at normal width. Inspect screenshots and diagrams at their displayed size, including narrow layouts.
+Check commands, UI labels, local links and diagram facts against the implementation. Render the README and representative long and short pages at normal width. Inspect screenshots and diagrams at their displayed size, including narrow layouts. Check text gutters, arrow clearances and repeated labels by sight; passing geometry bounds cannot establish a readable diagram.
 
 Review the full collection for duplicated explanations, abandoned pages and misleading navigation. End with current instructions, explicit verification limits and a clean path to deeper detail.
