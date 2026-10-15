@@ -45,6 +45,8 @@ For a substantial documentation refresh, consider chapter banners that help read
 
 For a requested PDF or manual, read [manuals.md](references/manuals.md). Do not generate a PDF merely because Markdown guides exist.
 
+When documentation includes diagrams, screenshots, banners or a typeset document, read [visual-verification.md](references/visual-verification.md). Complete its rendered review before reporting the collection finished. Geometry checks and successful generation do not substitute for reading the actual output.
+
 ## Verify the result
 
 Read the first screen as a newcomer. Can they identify the next action without reading the whole page?

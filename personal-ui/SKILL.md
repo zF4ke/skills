@@ -21,6 +21,8 @@ For a product README or installation guide, read [readmes.md](references/readmes
 
 Identify the main action, the information needed to choose it, and the secondary controls. Choose the smallest useful composition for realistic content. Keep consistent edge insets and readable text. Let an empty utility shrink instead of reserving a dashboard's worth of space.
 
+Keep related options visible in clearly spaced sections or rows. The owner strongly dislikes down-chevron accordions and hidden expandable containers. Use them only when explicitly requested. For secondary material, prefer a direct Edit, Details or History action leading to a focused view, or a compact tab group when the destinations are peers. Saving space alone does not justify concealing the interface behind arrows. A select for choosing a value is a different control; use it when that choice needs one.
+
 Use existing semantic tokens and components when they fit. Shadcn/ui is a useful reference for understated controls, keyboard behavior and dark neutral surfaces. Preserve its behavior if restyling its components. A reusable design system includes geometry, state, motion and copy, not only colors.
 
 Give buttons and adjacent helper text an explicit gap from the spacing scale. Check their rendered bounds after shared margins apply. Finish when the text clears the button by the chosen gap, including when it wraps.
