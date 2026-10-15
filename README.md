@@ -1,69 +1,94 @@
 <h1 align="center">Personal skills</h1>
-<p align="center">My agent skills, design preferences and reference library.</p>
-<p align="center"><a href="#install">Install</a> / <a href="personal-ui/SKILL.md">Personal UI</a> / <a href="#references">References</a></p>
+<p align="center">Design preferences and documentation guidance for coding agents.</p>
 
-## Install
+## Install a skill
 
-Install with the [skills.sh CLI](https://github.com/vercel-labs/skills). You need Node.js and Git. For a private repository, configure Git authentication first, for example with `gh auth login` and `gh auth setup-git`.
+You need Node.js and Git. Run this on each PC, then choose the agents you use:
+
+```powershell
+npx skills add zF4ke/skills --skill personal-ui --global
+```
+
+Replace `personal-ui` with `clear-docs` to install the documentation skill. `--global` makes the chosen skill available across projects. Each installation includes its references and assets.
+
+For a private repository, set up GitHub authentication first:
+
+```powershell
+gh auth login
+gh auth setup-git
+```
+
+## Choose the right skill
+
+| Skill | Use it for |
+| --- | --- |
+| [Personal UI](personal-ui/SKILL.md) | App interfaces, settings, onboarding, installers, motion and product presentation. |
+| [Clear docs](clear-docs/SKILL.md) | READMEs, user guides and documentation that is accurate and easy to scan. |
+
+Ask for the skill by name:
+
+> Use $personal-ui to improve these settings. Preserve the behavior and check the running app.
+
+> Use $clear-docs to rewrite this README. Check the installation steps against the code.
+
+An agent may also select a skill from its description. Start a new session if it caches the available skills.
+
+### Personal UI references
+
+Keep `frontend-design` installed. Personal UI takes precedence when their aesthetic guidance conflicts, while compatible implementation advice still applies.
+
+[Preferences](personal-ui/references/preferences.md) records the owner's feedback. [Desktop patterns](personal-ui/references/desktop-patterns.md), [motion](personal-ui/references/motion.md) and [README guidance](personal-ui/references/readmes.md) cover specific decisions. The [repertoire](personal-ui/references/repertoire.md) contains selected visual references.
+
+[Cloak](https://github.com/zF4ke/cloak) is the current app example. Its compact layout reflects the feedback behind Personal UI. Other products should use a design that fits their purpose.
+
+<p align="center"><img src="personal-ui/references/examples/cloak/projects-rounded.svg" width="760" alt="Cloak's project manager with new, import and clone actions" /></p>
+
+Reference screenshots and collected artwork are for study. Do not redistribute them as app artwork. The Cloak example uses isolated test projects, without personal project data.
+
+## Choose agents and update
+
+To target specific agents, add `--agent` with the names you use:
 
 ```powershell
 npx skills add zF4ke/skills --skill personal-ui --global --agent codex claude-code opencode
 ```
 
-Run this on each PC. `--global` makes the skill available across projects. Change the agent names to target the agents you use, or omit `--agent` to choose interactively. The installer includes the skill's references and assets. It uses a shared copy with links by default and falls back to copies when linking fails. Add `--copy` if you prefer independent copies.
-
-## Personal UI
-
-Design guidance for interfaces, onboarding, settings, installers and product READMEs. It carries the lessons from Ada and Cloak, plus selected examples and source PDFs from my design repertoire.
-
-[Cloak](https://github.com/zF4ke/cloak) is the current example. Its compact dark layout, purple accent, connected setup steps and themed controls reflect the feedback that shaped this skill. Other products should use a composition that fits their own purpose.
-
-<p align="center"><img src="personal-ui/references/examples/cloak/projects-rounded.svg" width="760" alt="Cloak's project manager with new, import and clone actions, and two managed projects" /></p>
-
-### Use it
-
-Ask the agent to use `$personal-ui`, for example:
-
-> Use $personal-ui to redesign these settings. Keep the existing behavior and verify the result in the running app.
-
-The description also lets an agent select it for relevant design tasks. Start a new session if your agent caches its skill list.
-
-Keep `frontend-design` installed. Personal UI takes precedence when their aesthetic guidance conflicts; compatible implementation advice still applies. Skill instructions guide the agent, so this does not disable another skill or guarantee automatic selection in every agent.
-
-### Update
-
-Repeat the explicit install command to refresh every selected agent, including independent copies:
+Repeat the install command to update the selected agents. Add `--copy` when you want independent copies, and include it again when refreshing those copies:
 
 ```powershell
 npx skills add zF4ke/skills --skill personal-ui --global --agent codex claude-code opencode --copy
 ```
 
-`npx skills update personal-ui --global` refreshes the shared installation. In the tested CLI version, it left an independent Claude Code copy unchanged. Use the command above when you installed with `--copy`.
-
-To inspect the repository's available skills without installing:
+List the available skills without installing them:
 
 ```powershell
 npx skills add zF4ke/skills --list
 ```
 
-## References
+## Use a local checkout
 
-The [skill entry point](personal-ui/SKILL.md) directs the agent to the relevant material for each task. The complete reference library travels with the installation.
+From this repository, run:
 
-| Reference | What it covers |
-| --- | --- |
-| [Preferences](personal-ui/references/preferences.md) | General taste and product-specific feedback from Ada and Cloak. |
-| [Desktop patterns](personal-ui/references/desktop-patterns.md) | Layout, dropdowns, dialogs, grouping, installers and native window edges. |
-| [Motion](personal-ui/references/motion.md) | Springs, state transitions, first-render behavior and reduced motion. |
-| [Repertoire](personal-ui/references/repertoire.md) | Selected images, original PDFs and their source mapping. |
-| [READMEs](personal-ui/references/readmes.md) | Presentation, installation paths, screenshots and linked guides. |
+```powershell
+.\install.ps1
+```
 
-The library contains personal screenshots and collected design references. Those references are for study, not artwork to redistribute in an app. Cloak's example captures the real application using isolated test projects; it contains no personal project data.
+The script installs **Personal UI only** and lets you choose agents interactively. It supports `-Agents`, `-Copy` and `-Yes`:
 
-## Maintain the skill
+```powershell
+.\install.ps1 -Agents codex -Copy -Yes
+```
 
-Edit this Git repository, update the relevant reference and commit the change. Keep enduring preferences separate from choices made for one product. Replace superseded guidance rather than adding contradictory rules. Push, then run the update command on each PC.
+To install Clear docs from the checkout, use the CLI directly:
 
-[Validation notes](personal-ui/references/validation.md) record the independent tests and their limits. [The research notes](docs/skill-guidance-research.md) explain the packaging, trigger and evaluation decisions. Cloak remains the visual example.
+```powershell
+npx skills add . --skill clear-docs --global
+```
 
-For a local checkout, `install.ps1` uses the same skills CLI and lets you choose agents interactively. It supports `-Agents codex,claude-code,opencode`, `-Copy` and `-Yes`. Use the GitHub command above when you want updates to come from this repository.
+The GitHub install command uses this repository as its source. The local script uses your checkout.
+
+## Maintain these skills
+
+Edit the skill or the relevant reference, then commit and push. Keep general preferences separate from decisions about one product. Replace superseded guidance instead of accumulating conflicting rules. Update each PC after publishing changes.
+
+[Validation notes](personal-ui/references/validation.md) record the Personal UI checks and their limits. [Research notes](docs/skill-guidance-research.md) explain the packaging and evaluation decisions.
