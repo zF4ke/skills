@@ -27,6 +27,8 @@ Keep familiar toolbar actions in stable positions as content and availability ch
 
 For compact links to a related task, source or record, prefer muted text, a trailing arrow and single-line ellipsis. Keep the full label available in the destination and accessible name. A padded pill hit area stays transparent at rest and fills only on hover. Keyboard focus uses an outline without a background fill. Preserve the label's alignment with neighboring content.
 
+In continuous histories, load the next page as its boundary scrolls into view. Keep the visible record in place when prepending older items. Show loading and a deliberate retry after failure. Use square hover edges on full-width rows that meet divider lines; reserve rounded fills for separate controls.
+
 Make actionable controls recognizable at rest through their shape, border, fill or established link treatment. Hover feedback should reinforce an existing affordance. Align labels and controls vertically, including wrapped labels. Give helper text explicit space above and below.
 
 Keep related sections on the same heading and field scale. Use shared heading-to-first-control and row spacing, then compare neighboring settings screens at the same size. Let content determine panel height. During resizing, preserve existing scroll position and avoid transient scrollbars or gutter changes that move content sideways. Release reserved scrollbar space when content fits. Verify the transition and the final bounds.
