@@ -25,7 +25,7 @@ Use the pointer cursor for clickable controls, including clear and remove button
 
 Keep familiar toolbar actions in stable positions as content and availability change. Disable temporarily unavailable actions instead of removing them when removal would shift nearby targets.
 
-For compact links to a related task, source or record, prefer muted text, a trailing arrow and single-line ellipsis. Keep the full label available in the destination and accessible name. A padded pill hit area stays transparent at rest and fills only on hover. Keyboard focus uses an outline without a background fill. Preserve the label's alignment with neighboring content.
+For compact links to a related task, source or record, prefer muted text, a trailing arrow and single-line ellipsis. Keep the full label available in the destination and accessible name. Use a padded rectangular hit area with modest corner rounding. It stays transparent at rest and fills only on hover. Keyboard focus uses an outline without a background fill. Preserve the label's alignment with neighboring content.
 
 In continuous histories, load the next page as its boundary scrolls into view. Keep the visible record in place when prepending older items. Show loading and a deliberate retry after failure. Use square hover edges on full-width rows that meet divider lines; reserve rounded fills for separate controls.
 
