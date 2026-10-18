@@ -35,6 +35,8 @@ Write direct action labels, useful errors and short explanations only where they
 
 Review rendered screens after the data and controls are wired. Use empty, populated, long-text, loading and failed states. Check narrow and resized windows, zoom or OS scaling, keyboard focus, dropdown gutters, hover actions and reduced motion. Check native corners separately from renderer layout.
 
+On a live computer, run verification in disposable, isolated windows or processes that preserve the owner's foreground focus and input. A second monitor still shares the pointer and keyboard. Separate simulated focus or isolated geometry from checks on the actual desktop, and defer checks that need the owner's input rather than repeatedly interrupting their work.
+
 A control is complete when it acts on real state, its outcome is visible, errors keep the user's draft, and it remains understandable without hover or color alone. Capture screens at rest as well as during transitions. Fix the worst composition or interaction defect and inspect again. A build passing does not establish good design.
 
 ## Refine from feedback
