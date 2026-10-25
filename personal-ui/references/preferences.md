@@ -9,6 +9,8 @@ The owner values clean, modern interfaces that feel intentional. Minimal means t
 - Use periods, commas and line breaks. Avoid em dashes and middle-dot separators.
 - Remove redundant status lines, slogans, sentimental placeholders, generic helper subtitles and permanent implementation notes. Give each secondary destination one clear entry point unless another placement serves a distinct task.
 - Choose typography for the product's reference, material and reading task. Match an established type scale when extending an interface.
+- Use regular weight for messages and sustained reading. Heavier controls and headings do not justify making every paragraph bold. Keep explicit emphasis distinct.
+- Count the items the user recognizes. Group repeated parts of one item while keeping their destinations visible, and offer a reviewed bulk action for a list of equivalent updates.
 - Use icons to make actions and objects recognizable. Choose one outline family and match stroke, size and optical alignment. Provider logos keep their real proportions and name.
 - Tasteful emojis are allowed. They should identify a familiar object or express a real moment, rather than decorate every heading.
 - Prefer springs and continuity. Opening, changing and completing should feel responsive and coherent. Honor reduced motion.
