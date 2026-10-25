@@ -14,6 +14,7 @@ The owner values clean, modern interfaces that feel intentional. Minimal means t
 - Prefer springs and continuity. Opening, changing and completing should feel responsive and coherent. Honor reduced motion.
 - Keep related controls visible through spacing and hierarchy. The owner strongly rejects down-chevron accordions and hidden expandable containers unless explicitly requested. Prefer flat sections, rows, peer tabs or a clearly named Edit, Details or History destination. A compact layout must not become a sequence of arrows the reader has to open.
 - Use color where it has a job. Do not tint every card, create competing accents or rely on color as the only state cue.
+- Keep a dark app's canvas, fields and dividers neutral unless the owner chooses a tinted theme. An aqua or green accent does not justify a green cast over the whole interface.
 - Make density fit the task. Reading and editing need room. Small utilities need a compact footprint and useful space, rather than oversized headers or empty dashboard panels.
 - Keep right gutters correct at rest, hover, focus and menu-open states. Hidden actions must not leave the visible timestamp or content cramped against the edge.
 - Use toggles for boolean controls instead of checkbox squares. Keep a visible label, keyboard operation, checked semantics and disabled/error feedback. Single-choice radio groups remain distinct.
@@ -24,6 +25,12 @@ The owner values clean, modern interfaces that feel intentional. Minimal means t
 Use the pointer cursor for clickable controls, including clear and remove buttons inside fields. Keep text-entry areas and selectable content recognizable. Disabled controls retain disabled styling and behavior.
 
 Keep familiar toolbar actions in stable positions as content and availability change. Disable temporarily unavailable actions instead of removing them when removal would shift nearby targets.
+
+For a small ordered set of named levels, prefer a compact tier selector with discrete targets and a moving selection background. Do not stretch it into a full-width continuous range slider. Keep the levels understandable and support keyboard changes.
+
+Status icons need enough stroke and size to read clearly. Avoid a colored tile behind a warning icon or a second outlined box around an ordinary inline error. Give the error the normal content gutter and place its recovery action beside it. Keyboard focus should remain clear through a restrained inset or border treatment, without a thick outer ring around an already bordered field.
+
+Keep compact work lists on one line when the title, state, elapsed time and actions fit. Do not create a separate row for each secondary action. Put counts next to the heading they describe. History controls should name their destination, such as View dismissed, rather than show an ambiguous state label alone.
 
 For compact links to a related task, source or record, prefer muted text, a trailing arrow and single-line ellipsis. Keep the full label available in the destination and accessible name. Use a padded rectangular hit area with modest corner rounding. It stays transparent at rest and fills only on hover. Keyboard focus uses an outline without a background fill. Preserve the label's alignment with neighboring content.
 

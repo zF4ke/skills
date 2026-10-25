@@ -6,6 +6,8 @@ Keep the first usable path visible. For an installed desktop app, lead with a re
 
 Keep README a starting point with focused linked pages when the product has many capabilities. Tables suit commands, states and settings. Do not scatter the same defaults across multiple pages unless necessary; check all repeated values after changing behavior. Use real paths and complete commands. Do not imply source-only and packaged installations have identical prerequisites.
 
+For a user-facing package library, lead with available packages and how to install them. Use a small useful catalog and one direct installation path. Move build commands, archive contracts, publishing rules and contributor details into a linked development page. Keep compatibility limits beside the affected package or install step.
+
 Screenshots should show the current real UI at rest, readable at GitHub's content width. Use owned assets and omit credentials or personal conversation. Do not fake screenshots of unimplemented features. Include installation, updates, uninstall, data locations and recovery where they affect a user's work. Release claims must match verification; distinguish isolated tests from real account or OneDrive tests.
 
 Choose a finished product the owner approves as the main visual example. Cloak is the current example. A test prototype can establish interaction behavior without meeting the owner's visual standard; link it as verification evidence instead of promoting it as the README's main example.

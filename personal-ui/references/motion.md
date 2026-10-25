@@ -4,7 +4,7 @@ Use motion to show continuity between real states. A selected navigation backgro
 
 For compact React utilities, a starting spring is stiffness 380 to 500 with damping 30 to 36. These are examples, not fixed constants. Tune mass, displacement and content size together. Use less displacement for small menus than for large sheets. Enter can take slightly longer than exit.
 
-Prefer one shared motion vocabulary. Avoid every control bouncing with a different spring. Press scales near .96 to .98 and a small hover response are usually enough. Translate or scale without changing neighboring layout unless a real expansion requires it.
+Prefer one shared motion vocabulary. Keep button text and ordinary glyphs stationary during hover, press and pending work. Animate selection backgrounds, opacity, color and real changes of size. The owner likes an intentional pin/unpin tilt; retain that targeted state animation without applying rotation or press scaling to every control. Small dialog entry motion can establish its relationship to the trigger without repeatedly moving its content.
 
 When the owner explicitly requests a disclosure, animate its height so content moves coherently. When closing, return focus to the trigger if it was inside the content, and make exiting descendants inert. Preserve drafts when views switch. Keep object positions stable across periodic data refreshes.
 
@@ -16,6 +16,8 @@ The repertoire's Micro-Animations and Swipe Anims frames provide composition ref
 ## Initial state and state changes
 
 Mount an indicator at its current value. Animate only subsequent user-driven changes. A setup track with no completed steps must not briefly appear full and retract when its modal opens. Give Motion indicators `initial={false}` or an explicit matching initial value. The same rule applies to toggles, progress bars and selected navigation highlights. Reopen dialogs and switch away and back during verification; first-render bugs can disappear during an ordinary forward walkthrough.
+
+Retained hidden tabs must not measure a zero-size selection and animate from it when shown. Filtering a scrolled collection must not pull an offscreen header back into view or replay its arrival. Check the scroll position, selected geometry and focus return while the header is outside the viewport.
 
 Drive renderer animation with the browser frame loop. Match native movement and resizing to the active display refresh rate, accounting for the time spent applying each frame. Retarget interrupted movement from its current position and velocity. Keep expensive capture, encoding and filesystem work out of animation callbacks. Measure frame intervals while moving and resizing the real window; a duration or high-refresh screenshot alone does not establish smoothness.
 
