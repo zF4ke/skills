@@ -48,6 +48,8 @@ Use recognizable action icons with a consistent stroke and size. Match expand an
 
 Keep routine success quiet when the result is already clear. Avoid permanent confirmation text for opening a folder or window when the new destination already confirms the action. Use explicit status when it changes the user's next action, especially while work is pending or has failed. Text and semantics must carry meaning alongside color.
 
+For optional app and extension updates, show availability with a quiet indicator on the maintenance destination. Do not add a toast, sound, forced dialog or navigation change. Keep checking separate from downloading and applying, and put review and progress inside the destination the user deliberately opens.
+
 ## Selection and dragging
 
 Keep substantive content selectable when copying it is useful, including paths, errors, logs, notes and editable fields. Prevent accidental text selection and native image dragging on decorative artwork and app chrome. Verify this with a rendered selection gesture.
