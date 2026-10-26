@@ -9,6 +9,7 @@ The owner values clean, modern interfaces that feel intentional. Minimal means t
 - Use periods, commas and line breaks. Avoid em dashes and middle-dot separators.
 - Remove redundant status lines, slogans, sentimental placeholders, generic helper subtitles and permanent implementation notes. Give each secondary destination one clear entry point unless another placement serves a distinct task.
 - Choose typography for the product's reference, material and reading task. Match an established type scale when extending an interface.
+- Treat peer page headers as one component. Match title size, weight, line height, icon size, alignment and top inset across destinations. Use the same icon for a destination in navigation and its header. Verify computed styles and rendered bounds side by side; matching tag names or CSS tokens alone is insufficient.
 - Use regular weight for message composers, sent messages and sustained reading. Heavier controls and headings do not justify making every paragraph bold. Keep explicit emphasis distinct.
 - Count the items the user recognizes. Group repeated parts of one item while keeping their destinations visible, and offer a reviewed bulk action for a list of equivalent updates.
 - Use icons to make actions and objects recognizable. Choose one outline family and match stroke, size and optical alignment. Provider logos keep their real proportions and name.
