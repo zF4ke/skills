@@ -27,7 +27,7 @@ The owner values clean, modern interfaces that feel intentional. Minimal means t
 
 Use the pointer cursor for clickable controls, including clear and remove buttons inside fields. Keep text-entry areas and selectable content recognizable. Disabled controls retain disabled styling and behavior.
 
-Keep familiar toolbar actions in stable positions as content and availability change. Disable temporarily unavailable actions instead of removing them when removal would shift nearby targets.
+Keep familiar toolbar actions in stable positions as content and availability change. Disable temporarily unavailable actions instead of removing them when removal would shift nearby targets. Scope a save's pending state to the affected field or row. Keep unrelated controls enabled and visually steady; queue dependent writes without losing edits. Avoid a brief dimming flash for ordinary switch saves.
 
 For a small ordered set of named levels, prefer a compact tier selector with discrete targets and a moving selection background. Do not stretch it into a full-width continuous range slider. Keep the levels understandable and support keyboard changes.
 
