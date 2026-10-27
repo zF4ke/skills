@@ -10,6 +10,10 @@ For a user-facing package library, lead with available packages and how to insta
 
 Screenshots should show the current real UI at rest, readable at GitHub's content width. Use owned assets and omit credentials or personal conversation. Do not fake screenshots of unimplemented features. Include installation, updates, uninstall, data locations and recovery where they affect a user's work. Release claims must match verification; distinguish isolated tests from real account or OneDrive tests.
 
+For a floating desktop utility, show enough desktop around the window to explain its footprint and layering. A lightly softened, owner-approved background can keep the interface readable. Show a useful populated state, such as an interactive answer, rather than only an empty composer. Keep window proportions and controls faithful to the real product.
+
+Give long feature lists consistent, recognizable icons beside their names. Lead with the product's distinctive capabilities and everyday value; put routine setup and customization later. Use concise descriptions and links to deeper guides.
+
 Choose a finished product the owner approves as the main visual example. Cloak is the current example. A test prototype can establish interaction behavior without meeting the owner's visual standard; link it as verification evidence instead of promoting it as the README's main example.
 
 For a skills repository, put the standard `npx skills add owner/repo --skill name` installation path before the resource catalogue. Explain scope, agent selection, prerequisites, private repository access and updates. Keep the skill's description focused on activation triggers; detailed design rules and precedence belong in the body.
