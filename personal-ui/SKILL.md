@@ -15,7 +15,7 @@ Read [preferences.md](references/preferences.md) for the owner's preferences acr
 
 Keep references conditional. A finance workspace, book reader, installer and command launcher need different amounts of space and different hierarchies. Infer the palette and composition from the current product.
 
-For a product README or installation guide, read [readmes.md](references/readmes.md). For installers, read the installer section in [desktop-patterns.md](references/desktop-patterns.md). [validation.md](references/validation.md) records an independent skill test and the limits of its evidence.
+For a product README's visual presentation, read [readmes.md](references/readmes.md). Use clear-docs for documentation structure, wording and procedures when available. For installers, read the installer section in [desktop-patterns.md](references/desktop-patterns.md). [validation.md](references/validation.md) records an independent skill test and the limits of its evidence.
 
 ## Design and build
 

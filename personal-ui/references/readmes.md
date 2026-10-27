@@ -1,23 +1,13 @@
-# Product READMEs
+# Product README presentation
 
-The owner asked for presentation quality similar to their Sophia and Buckshot Roulette repositories. Use their hierarchy, not their wording or every decorative choice. A small centered owned mark, product name, concrete one-sentence purpose, download link and genuine app screenshot give the reader an immediate starting point. Use only badges that convey real maintained facts. Avoid a wall of badges and repeated feature claims.
+Use this reference for visual presentation. Use clear-docs for content structure, wording, onboarding and factual instructions when that skill is available. Keep the two responsibilities separate.
 
-Keep the first usable path visible. For an installed desktop app, lead with a release download and prerequisites, not source compilation. Put development commands in a linked guide. Show what each main feature does, why the user would choose it, how to trigger it, and where its result appears. Put consequential behavior beside the action that causes it. For example, an automatic Git update policy that discards edits belongs beside the update explanation, not only in a developer ADR.
+Give the reader a clear first screen: an owned product mark, name, short purpose, primary starting action and a genuine current screenshot. Match the product's visual language and the destination's available width.
 
-Keep README a starting point with focused linked pages when the product has many capabilities. Tables suit commands, states and settings. Do not scatter the same defaults across multiple pages unless necessary; check all repeated values after changing behavior. Use real paths and complete commands. Do not imply source-only and packaged installations have identical prerequisites.
+For a floating desktop utility, include enough desktop context to show the window's footprint and layering. Keep the whole window and any attached navigation centered together. Preserve background detail unless the owner requests an effect. Use sample content that demonstrates a useful capability. Every visible control, chart label and value must remain readable and inside the capture.
 
-For a user-facing package library, lead with available packages and how to install them. Use a small useful catalog and one direct installation path. Move build commands, archive contracts, publishing rules and contributor details into a linked development page. Keep compatibility limits beside the affected package or install step.
+Use recognizable icons alongside feature names when a long list benefits from visual cues. Keep the owner's requested list format. Order features by distinctive value and everyday importance, with routine setup and customization later.
 
-Screenshots should show the current real UI at rest, readable at GitHub's content width. Use owned assets and omit credentials or personal conversation. Do not fake screenshots of unimplemented features. Include installation, updates, uninstall, data locations and recovery where they affect a user's work. Release claims must match verification; distinguish isolated tests from real account or OneDrive tests.
+Show implemented UI using owned or approved assets. Exclude credentials and private conversation. A prototype or generated mockup should be identified as such rather than presented as the shipped interface.
 
-For a floating desktop utility, show enough desktop around the window to explain its footprint and layering. A lightly softened, owner-approved background can keep the interface readable. Show a useful populated state, such as an interactive answer, rather than only an empty composer. Keep window proportions and controls faithful to the real product.
-
-Give long feature lists consistent, recognizable icons beside their names. Lead with the product's distinctive capabilities and everyday value; put routine setup and customization later. Use concise descriptions and links to deeper guides.
-
-Choose a finished product the owner approves as the main visual example. Cloak is the current example. A test prototype can establish interaction behavior without meeting the owner's visual standard; link it as verification evidence instead of promoting it as the README's main example.
-
-For a skills repository, put the standard `npx skills add owner/repo --skill name` installation path before the resource catalogue. Explain scope, agent selection, prerequisites, private repository access and updates. Keep the skill's description focused on activation triggers; detailed design rules and precedence belong in the body.
-
-Before finishing a README, inspect its rendered Markdown at the destination's normal content width. Verify the main example is approved, images are readable, installation is easy to reach and local links resolve. Read the copy against the product's actual behavior and test the primary installation command when access permits. Correct the rendered result before reporting the README complete. If destination rendering or an installation cannot be verified, state that specific limit.
-
-Reference examples: [Sophia](https://github.com/zF4ke/sophia), [Buckshot Roulette Solver](https://github.com/zF4ke/Buckshot-Roulette-Solver). The owner's dislikes still apply: em dashes, middle-dot separators, uppercase subtitles and redundant tiny status copy. A README need not inherit an app's black-purple palette or glass effects.
+Inspect the rendered README at normal and narrow widths. Check the first screen, image scale, alignment, icons, clipped labels, encoding and local links. Finish only when the delivered images remain readable at their actual display size.

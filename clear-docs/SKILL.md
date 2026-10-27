@@ -37,7 +37,7 @@ Keep one current source for each setting, procedure and policy. Link to it from 
 
 Distinguish implemented behavior, verified behavior and requirements still missing. State a limit where it changes the reader's next step. Avoid repeating a general disclaimer in every section.
 
-For a product README, lead with the product, its primary download or starting action, and one current screenshot of the main experience. Use consistent, centered image widths. Keep feature summaries short and link to focused guides.
+For a product README, make the primary download or starting action easy to find. Keep feature descriptions concise and link to focused guides. Use the project design guidance, or personal-ui when available, for screenshots, icons and visual layout.
 
 For diagrams, choose a visual form that fits the question. A timeline, nested map, evidence graph and comparison need different compositions. Keep an established theme, but make relationships and hierarchy carry meaning. Keep semantic labels readable in the actual page or document. Remove decorative markers, repeated subtitles and footer notes from graphs and images. Hollow bullets and node dots need a specific meaning; plain text needs no marker. Captions should add information that the image does not already show. Avoid turning every subject into the same boxes and arrows.
 
