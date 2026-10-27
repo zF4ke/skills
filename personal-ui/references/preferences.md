@@ -43,11 +43,11 @@ Make actionable controls recognizable at rest through their shape, border, fill 
 
 Keep related sections on the same heading and field scale. Use shared heading-to-first-control and row spacing, then compare neighboring settings screens at the same size. Let content determine panel height. During resizing, preserve existing scroll position and avoid transient scrollbars or gutter changes that move content sideways. Release reserved scrollbar space when content fits. Verify the transition and the final bounds.
 
-Show each operation once, with a consistently sized progress bar and an aligned status icon separated from its text. Batch work should expose progress on the affected items. Use measured progress when available and an indeterminate state otherwise.
+Use a shared status row to align its icon and label with an explicit gap. Show each operation once, with a consistently sized progress bar. Batch work should expose progress on the affected items. Use measured progress when available and an indeterminate state otherwise.
 
 Show progress as soon as a slow action starts. Distinguish preparation, ongoing activity, completion and failure using real state. An image preview should say what was captured or sent without implying continuous observation. Respect reduced motion and avoid stealing focus for status feedback.
 
-Animate dismissals with a brief fade and measured collapse so remaining content moves continuously. Make exiting controls inert, preserve the actual action result and respect reduced motion.
+Bulk dismissal keeps unfinished work and unanswered requests visible. Recheck eligibility after asynchronous steps and when hidden items resume. Animate eligible dismissals with a brief fade and measured collapse so remaining content moves continuously. Make exiting controls inert, preserve the actual action result and respect reduced motion.
 
 Use recognizable action icons with a consistent stroke and size. Match expand and restore as a pair. Prefer an object's real artwork over a generic file-type icon when that artwork is available. Keep a fallback for missing assets. Choose reversible hiding and destructive deletion symbols that remain distinguishable.
 
